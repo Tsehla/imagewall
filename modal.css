@@ -1,0 +1,188 @@
+/*body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}*/
+/*  */
+/* Modal grid inside */
+.modal-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-rows: repeat(8, 1fr);
+}
+
+.modal-header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: yellow;
+}
+
+.modal-image img {
+ display: block;
+ margin: 0 auto;
+ /* border: none; */
+ }
+ .modal-image{
+   grid-column: 1 / 4;
+   grid-row: 2 / 4;
+ }
+.modal-image .album__artwork{
+    width: 70%;
+ }
+
+ .modal-userInfo{
+   grid-column: 4 / 6;
+   padding-top: 30px;
+   padding-right: 10px;
+ }
+ /*  */
+  .modal-userInfo ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+  .modal-userInfo ul li{
+   text-decoration: none;
+  }
+ /*  */
+
+ .modal-bio {
+   grid-column: 4 / 6;
+   grid-row: 3 / span 3;
+   padding-right: 10px;
+ }
+ /* .social_media_links {
+   grid-column: 1 / 4;
+   grid-row: 4 / 6;
+   background: red;
+   height: auto;
+ } */
+ .modal_footer{
+   grid-column: 1 / -1;
+   grid-row: 6 / 7;
+   padding: 10px;
+   background: yellow;
+   height: auto;
+ }
+
+
+/* social_media_links */
+.modal_footer ul
+{
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(30%, -5%);
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  text-align: center;
+}
+.modal_footer ul li{
+  list-style: none;
+}
+.modal_footer li a{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);/*color pop for the back circle*/
+  transition: .5s;
+}
+.modal_footer ul li a:hover{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+/* this code draws the inside yellow color of the circle*/
+.modal_footer ul li a .fa{
+  width: 100%;
+  height: 100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);/*gradient color inside the circle
+  /*yellow color inside the circle*/
+  background: #ff0;
+  border-radius: 50%;
+  /* this line centers icons inside the circle*/
+  line-height: calc(60px - 12px);
+  font-size: 24px; /*icon size inside the circle*/
+  color: #262626;
+  transition: .5s;
+}
+
+.social_media_links ul li:nth-child(1) a:hover .fa{
+  color: #3b5998 ;
+}
+.social_media_links ul li:nth-child(2) a:hover .fa{
+  color: #00aced ;
+}
+.social_media_links ul li:nth-child(3) a:hover .fa{
+  color: #dd4b39 ;
+}
+.social_media_links ul li:nth-child(4) a:hover .fa{
+  color: #bc2a8d ;
+}
+.social_media_links ul li:nth-child(5) a:hover .fa{
+  color: #007bb6 ;
+}
+
+/*  */
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background-color: #f4f4f4;
+  margin: 2% auto;
+  /* padding: 20px; */
+  width: 67%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2);
+  /* animation - linked to keyframes below*/
+  animation-name: modalopen;
+  animation-duration:1s;
+}
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+.closeBtn:hover,.closeBtn:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+/* Styling elements inside the Modal */
+
+@media (max-width: 1000px) {
+  .modal-content{
+    width: 90%;
+  }

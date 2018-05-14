@@ -1,0 +1,299 @@
+*{
+  border:1px solid brown;
+}
+
+body{
+    
+    font-size:16px;
+}
+
+#body_gallery_container{
+    height:107.5em;
+    width:59.9em;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:10em 10em 10em 10em 10em 10em 4em;
+    grid-template-rows:15em 15em;
+    grid-template-areas: "image_1 image_2 image_3 image_4 image_5 image_6 image_7 image_8 image_9 image_10 image_11 image_12 image_13 image_14 image_15 image_16 image_17 image_18 image_19 image_20 image_12 image_22 image_23 image_24 image_25"
+        
+        "image_26 image_27 image_28 image_29 image_30 image_31 image_32 image_33 image_34 image_35 image_36 image_37 image_38 image_39 image_40 image_41 image_42 image_43 image_44 image_45 image_46 image_47 image_48 image_49 image_50 ";
+    
+}
+
+#image_1 { grid-area: "image_1";}
+#image_2 { grid-area: "image_2";}
+#image_3 { grid-area: "image_3";}
+#image_4 { grid-area: "image_4";}
+#image_5 { grid-area: "image_5";}
+#image_6 { grid-area: "image_6";}
+#image_7 { grid-area: "image_7";}
+#image_8 { grid-area: "image_8";}
+#image_9 { grid-area: "image_9";}
+#image_10 { grid-area: "image_10";}
+#image_11 { grid-area: "image_11";}
+#image_12 { grid-area: "image_12";}
+#image_13 { grid-area: "image_13";}
+#image_14 { grid-area: "image_14";}
+#image_15 { grid-area: "image_15";}
+#image_16 { grid-area: "image_16";}
+#image_17 { grid-area: "image_17";}
+#image_18 { grid-area: "image_18";}
+#image_19 { grid-area: "image_19";}
+#image_20 { grid-area: "image_20";}
+#image_21 { grid-area: "image_21";}
+#image_22 { grid-area: "image_22";}
+#image_23 { grid-area: "image_23";}
+#image_24 { grid-area: "image_24";}
+#image_25 { grid-area: "image_25";}
+/*row 2*/
+#image_26 { grid-area: "image_26";}
+#image_27 { grid-area: "image_27";}
+#image_28{ grid-area: "image_28";}
+#image_29 { grid-area: "image_29";}
+#image_30 { grid-area: "image_30";}
+#image_31{ grid-area: "image_31";}
+#image_32 { grid-area: "image_32";}
+#image_33 { grid-area: "image_33";}
+#image_34 { grid-area: "image_34";}
+#image_35 { grid-area: "image_35";}
+#image_36 { grid-area: "image_36";}
+#image_37 { grid-area: "image_37";}
+#image_38 { grid-area: "image_38";}
+#image_39 { grid-area: "image_39";}
+#image_40 { grid-area: "image_40";}
+#image_41 { grid-area: "image_41";}
+#image_42 { grid-area: "image_42";}
+#image_43 { grid-area: "image_43";}
+#image_44 { grid-area: "image_44";}
+#image_45 { grid-area: "image_45";}
+#image_46 { grid-area: "image_46";}
+#image_47 { grid-area: "image_47";}
+#image_48 { grid-area: "image_48";}
+#image_49 { grid-area: "image_49";}
+#image_50 { grid-area: "image_50";}
+
+
+
+#image_menu{
+    grid-area:"image_menu";
+}
+
+/* body contents*/
+/*menu*/
+#image_menu{/*currently hidden -------*/
+    display: none;
+    position: fixed;
+    top: 7px;
+    right: 0px;
+    width: 3.5em;
+    height: 34.4em;
+    background-color: rebeccapurple; 
+   
+}
+#search_bar{
+    width: 100%;
+    height: 5em;
+    text-align: center;
+}
+#search_bar::placeholder{
+    font-size: 4em;
+    color: blueviolet;
+}
+#menu_content{
+    width: 3em;
+    height: 34.4em;
+    display:grid;
+    align-items: center;
+}
+#menu_content p{
+    color: whitesmoke;
+    font-size: 0.6em;
+    font-weight: 800;
+    margin-left:15%;
+    text-decoration:underline
+}
+
+/* image pop*/
+#image_pop{
+    position: absolute;
+    top:5em;
+    left:20em;
+    width:20em;
+    height: 20em;
+    background-color: red;
+    
+}
+#image_pop_container{
+    width:20em;
+    height: 20em;
+}
+#image_shower{
+    width: 20em;
+    height: 15em;
+}
+#image_shower button {
+    width: 4em;
+    height: 4em;
+    color: red;
+}
+#image_details{
+    width: 28.6em;
+    height: 2em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+}
+#image_link{
+    width: 28.6em;
+    height: 2em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+}
+#profile_view{
+    width: 28.6em;
+    height: 1em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+    
+}
+#profile_view a{
+    color: blue;
+}
+
+/* profile pop*/
+#profile_pop{
+    position: absolute;
+    top:5em;
+    left:15em;
+    width:35em;
+    height: 25em;
+    background-color: red; 
+}
+#profile_pop_container{
+    width:35em;
+    height: 25em;
+}
+#profile_shower{
+    width: 25em;
+    height: 20em;
+}
+#profile_details{
+    width: 35.6em;
+    height: 2em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+}
+#profile_shower button {
+    width: 4em;
+    height: 4em;
+    color: red;
+}
+#profile_bio{
+    width: 35.6em;
+    height: 2em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+}
+#profile_social_links{
+    width: 35.6em;
+    height: 1em;
+    background-color: aliceblue;
+    font-size: 0.7em;
+    
+}
+#profile_social_links a{
+    color: blue;
+}
+
+/*menu */
+#menu_hoover{
+    position: absolute;
+    right: 0.9em; 
+    top: 0em;
+    width: 5em;
+    height: 1em;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+}
+#menu_hoover p{
+    margin-top: 0em;
+    font-size: 0.6em;
+    
+    font-weight: 500;
+}
+   /*menu child*/
+#menu_container {
+    position: absolute;
+    right:1.7em; 
+    top: 1em;
+    width: 9em;
+    height: 13em;
+    background-color: cadetblue; 
+}
+ul input{
+    height: 3em;
+    width: 10em;
+}
+#menu_container ul{
+    list-style: none;
+    text-align: left;
+    right: 1em;   
+}
+
+/*break points*/
+
+
+/*for-phone-only*/
+@media only screen and (max-width: 600px) {
+        body {
+        font-size:23px;
+        background-color: blue;
+    }
+     #body_gallery_container{
+    height:34.4em;
+    width:62.6em;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em;
+    grid-template-rows:4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em;
+         
+    grid-template-areas: "image_1 image_2 image_3 image_4 image_5 image_6 image_7 image_8 image_9 image_10 image_11 image_12 image_13 image_14 image_15 image_16 image_17 image_18 image_19 image_20 image_12 image_22 image_23 image_24 image_25"
+        "image_26 image_27 image_28 image_29 image_30 image_31 image_32 image_33 image_34 image_35 image_36 image_37 image_38 image_39 image_40 image_41 image_42 image_43 image_44 image_45 image_46 image_47 image_48 image_49 image_50 "; 
+}
+}
+/*for-desktop-up*/
+ @media only screen and (min-width: 1200px) {
+        body {
+        font-size:23px;
+        background-color: blue;
+    }
+     #body_gallery_container{
+    height:34.4em;
+    width:62.6em;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em;
+    grid-template-rows:4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em;
+         
+    grid-template-areas: "image_1 image_2 image_3 image_4 image_5 image_6 image_7 image_8 image_9 image_10 image_11 image_12 image_13 image_14 image_15 image_16 image_17 image_18 image_19 image_20 image_12 image_22 image_23 image_24 image_25"
+        "image_26 image_27 image_28 image_29 image_30 image_31 image_32 image_33 image_34 image_35 image_36 image_37 image_38 image_39 image_40 image_41 image_42 image_43 image_44 image_45 image_46 image_47 image_48 image_49 image_50 "; 
+}
+}
+/*for-big-desktop-up */
+ @media only screen and (min-width: 1800px) {
+    body {
+        font-size:23px;
+        background-color: blue;
+    }
+     #body_gallery_container{
+    height:34.4em;
+    width:62.6em;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em 2.5em;
+    grid-template-rows:4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em 4.2em;
+         
+    grid-template-areas: "image_1 image_2 image_3 image_4 image_5 image_6 image_7 image_8 image_9 image_10 image_11 image_12 image_13 image_14 image_15 image_16 image_17 image_18 image_19 image_20 image_12 image_22 image_23 image_24 image_25"
+        "image_26 image_27 image_28 image_29 image_30 image_31 image_32 image_33 image_34 image_35 image_36 image_37 image_38 image_39 image_40 image_41 image_42 image_43 image_44 image_45 image_46 image_47 image_48 image_49 image_50 "; 
+}
+}
